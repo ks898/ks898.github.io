@@ -143,8 +143,18 @@
             border: 1px solid #e2e8f0;
         }
 
+        /* พื้นหลังกล่องขอบเขตงานบริการ */
         .box-bg-image {
             background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('bg-box.jpg');
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        /* พื้นหลังกล่องเขตพื้นที่ให้บริการ */
+        .box-area-bg {
+            background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('bg-area.jpg');
             background-size: cover;
             background-position: center;
             border: 1px solid #cbd5e1;
@@ -172,13 +182,14 @@
         }
 
         .tag {
-            background-color: #e0f2fe;
+            background-color: rgba(224, 242, 254, 0.9);
             color: #0369a1;
             padding: 6px 14px;
             border-radius: 20px;
             font-size: 13.5px;
-            font-weight: 500;
+            font-weight: 600;
             border: 1px solid #bae6fd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .banner-container {
@@ -336,8 +347,8 @@
             </ul>
         </div>
 
-        <!-- พื้นที่ให้บริการ -->
-        <div class="box">
+        <!-- พื้นที่ให้บริการ (เพิ่มใส่รูปพื้นหลัง bg-area.jpg) -->
+        <div class="box box-area-bg">
             <h3>📍 เขตพื้นที่ให้บริการใกล้เคียง</h3>
             <div class="area-tags">
                 <span class="tag">บางนา</span>
@@ -397,7 +408,7 @@
             <a href="https://line.me/ti/p/EUJqXVHGGA" target="_blank" style="text-decoration: none;">
                 <div class="qr-card">
                     <img src="qr.png" alt="QR Code LINE ช่างซ่อมปั๊มน้ำ">
-                    <p><i class="fab fa-line"></i> แแตะเพื่อแอด LINE</p>
+                    <p><i class="fab fa-line"></i> แตะเพื่อแอด LINE</p>
                 </div>
             </a>
         </div>
@@ -409,4 +420,5 @@
     </a>
 
 </body>
-</html>
+                        </html>
+                        
