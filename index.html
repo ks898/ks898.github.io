@@ -78,19 +78,19 @@
             display: block;
         }
 
-        /* ปรับกรอบส่วนหัวแบรนด์ ให้ใส่รูป bg-header.jpg */
+        /* ปรับเร่งความคมชัด bg-header.jpg (เหลือความขาวจาง 20%) */
         .brand-header {
             display: flex;
             align-items: center;
             gap: 20px;
             padding: 18px 20px;
             border-radius: 12px;
-            background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('bg-header.jpg');
+            background: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), url('bg-header.jpg');
             background-size: cover;
             background-position: center;
-            border: 1px solid #cbd5e1;
+            border: 1px solid #94a3b8;
             margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
         }
 
         .logo-box {
@@ -119,31 +119,31 @@
             margin: 0;
             font-size: 24px;
             font-weight: 700;
-            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+            text-shadow: 0 1px 4px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 0.9);
         }
         
         .brand-title p {
             margin: 3px 0 0 0;
-            color: #1e293b;
-            font-weight: 600;
+            color: #000000;
+            font-weight: 700;
             font-size: 15px;
-            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+            text-shadow: 0 1px 4px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 0.9);
         }
 
-        /* ปรับกรอบแนะนำตัวให้ใส่รูป bg-intro.jpg */
+        /* ปรับเร่งความคมชัด bg-intro.jpg (เหลือความขาวจาง 20%) */
         .intro-text {
             font-size: 16px;
             font-weight: 700;
-            color: #081028;
-            background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('bg-intro.jpg');
+            color: #000000;
+            background: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), url('bg-intro.jpg');
             background-size: cover;
             background-position: center;
             padding: 14px 20px;
             border-radius: 10px;
             border-left: 5px solid #0f52ba;
             margin-bottom: 20px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+            text-shadow: 0 1px 4px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 0.9);
         }
 
         h2, h3 {
@@ -153,7 +153,7 @@
             margin-top: 10px;
             font-size: 19px;
             font-weight: 700;
-            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+            text-shadow: 0 1px 4px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 0.9);
         }
 
         .box {
@@ -164,7 +164,7 @@
             border: 1px solid #cbd5e1;
         }
 
-        /* ปรับเร่งความคมชัดภาพพื้นหลัง bg-box.jpg */
+        /* เร่งความคมชัด bg-box.jpg (ความขาวจาง 20%) */
         .box-bg-image {
             background: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), url('bg-box.jpg');
             background-size: cover;
@@ -173,9 +173,9 @@
             box-shadow: 0 4px 14px rgba(0,0,0,0.12);
         }
 
-        /* ปรับเร่งความคมชัดภาพพื้นหลัง bg-area.jpg */
+        /* ปรับเร่งความคมชัด bg-area.jpg (ปรับเท่ากันเหลือความขาวจาง 20%) */
         .box-area-bg {
-            background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url('bg-area.jpg');
+            background: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), url('bg-area.jpg');
             background-size: cover;
             background-position: center;
             border: 1px solid #94a3b8;
@@ -343,7 +343,7 @@
             <img src="bg.jpg" alt="KS.SERVICE ภาพปกผลงานช่างซ่อมปั๊มน้ำ">
         </div>
 
-        <!-- Header แสดงโลโก้แบรนด์ (แสดงรูปพื้นหลัง bg-header.jpg) -->
+        <!-- Header แสดงโลโก้แบรนด์ (ภาพคมชัด bg-header.jpg 20%) -->
         <div class="brand-header">
             <div class="logo-box">
                 <img src="logo.png" alt="KS.SERVICE ช่างซ่อมปั๊มน้ำเกียรติพงษ์ 082-712-7490">
@@ -354,10 +354,10 @@
             </div>
         </div>
 
-        <!-- กรอบข้อความแนะนำตัว (แสดงรูปพื้นหลัง bg-intro.jpg) -->
+        <!-- กรอบข้อความแนะนำตัว (ภาพคมชัด bg-intro.jpg 20%) -->
         <p class="intro-text">🛠️ ให้บริการซ่อม-ติดตั้งปั๊มน้ำและระบบประปา โทรติดต่อสอบถามแก้ไขปัญหาหรือเรียกใช้บริการช่างได้เลยครับ</p>
 
-        <!-- รายการขอบเขตบริการ (แสดงรูปพื้นหลัง bg-box.jpg) -->
+        <!-- รายการขอบเขตบริการ (ภาพคมชัด bg-box.jpg 20%) -->
         <div class="box box-bg-image">
             <h3>💧 ขอบเขตงานบริการ</h3>
             <ul class="service-list">
@@ -370,7 +370,7 @@
             </ul>
         </div>
 
-        <!-- พื้นที่ให้บริการ (แสดงรูปพื้นหลัง bg-area.jpg) -->
+        <!-- พื้นที่ให้บริการ (ภาพคมชัด bg-area.jpg 20%) -->
         <div class="box box-area-bg">
             <h3>📍 เขตพื้นที่ให้บริการใกล้เคียง</h3>
             <div class="area-tags">
