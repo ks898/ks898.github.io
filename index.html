@@ -122,13 +122,20 @@
             font-size: 15px;
         }
 
+        /* ปรับกรอบแนะนำตัวให้ใส่รูป bg-intro.jpg ได้เร่งภาพชัด */
         .intro-text {
             font-size: 16px;
-            background: #f0f4f9;
-            padding: 12px 18px;
-            border-radius: 8px;
-            border-left: 4px solid #0f52ba;
+            font-weight: 700;
+            color: #081028;
+            background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('bg-intro.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 14px 20px;
+            border-radius: 10px;
+            border-left: 5px solid #0f52ba;
             margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
         }
 
         h2, h3 {
@@ -137,7 +144,8 @@
             padding-left: 12px;
             margin-top: 10px;
             font-size: 19px;
-            font-weight: 600;
+            font-weight: 700;
+            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
         }
 
         .box {
@@ -145,25 +153,25 @@
             padding: 22px;
             border-radius: 12px;
             margin-top: 18px;
-            border: 1px solid #e2e8f0;
+            border: 1px solid #cbd5e1;
         }
 
-        /* พื้นหลังกล่องขอบเขตงานบริการ */
+        /* ปรับเร่งความคมชัดภาพพื้นหลัง bg-box.jpg (ลดความขาวจางเหลือ 20%) */
         .box-bg-image {
-            background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('bg-box.jpg');
+            background: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)), url('bg-box.jpg');
             background-size: cover;
             background-position: center;
-            border: 1px solid #cbd5e1;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #94a3b8;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
         }
 
-        /* พื้นหลังกล่องเขตพื้นที่ให้บริการ */
+        /* ปรับเร่งความคมชัดภาพพื้นหลัง bg-area.jpg (ลดความขาวจางเหลือ 25%) */
         .box-area-bg {
-            background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('bg-area.jpg');
+            background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url('bg-area.jpg');
             background-size: cover;
             background-position: center;
-            border: 1px solid #cbd5e1;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #94a3b8;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.12);
         }
 
         ul.service-list {
@@ -173,10 +181,10 @@
 
         ul.service-list li {
             margin-bottom: 10px;
-            font-size: 15.5px;
+            font-size: 16px;
             font-weight: 700;
             color: #000000;
-            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.95);
+            text-shadow: 0 1px 4px rgba(255, 255, 255, 1), 0 0 8px rgba(255, 255, 255, 0.8);
         }
 
         .area-tags {
@@ -187,14 +195,14 @@
         }
 
         .tag {
-            background-color: rgba(224, 242, 254, 0.9);
+            background-color: rgba(255, 255, 255, 0.92);
             color: #0369a1;
             padding: 6px 14px;
             border-radius: 20px;
             font-size: 13.5px;
-            font-weight: 600;
+            font-weight: 700;
             border: 1px solid #bae6fd;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
         }
 
         .banner-container {
@@ -242,6 +250,7 @@
             padding: 0;
             margin-top: 0;
             margin-bottom: 12px;
+            text-shadow: none;
         }
 
         .contact-btn {
@@ -337,9 +346,10 @@
             </div>
         </div>
 
+        <!-- กรอบข้อความแนะนำตัว (แสดงรูปพื้นหลัง bg-intro.jpg) -->
         <p class="intro-text">🛠️ ให้บริการซ่อม-ติดตั้งปั๊มน้ำและระบบประปา โทรติดต่อสอบถามแก้ไขปัญหาหรือเรียกใช้บริการช่างได้เลยครับ</p>
 
-        <!-- รายการขอบเขตบริการ -->
+        <!-- รายการขอบเขตบริการ (เร่งรูปชัด bg-box.jpg) -->
         <div class="box box-bg-image">
             <h3>💧 ขอบเขตงานบริการ</h3>
             <ul class="service-list">
@@ -352,7 +362,7 @@
             </ul>
         </div>
 
-        <!-- พื้นที่ให้บริการ (ใส่รูปพื้นหลัง bg-area.jpg) -->
+        <!-- พื้นที่ให้บริการ (เร่งรูปชัด bg-area.jpg) -->
         <div class="box box-area-bg">
             <h3>📍 เขตพื้นที่ให้บริการใกล้เคียง</h3>
             <div class="area-tags">
